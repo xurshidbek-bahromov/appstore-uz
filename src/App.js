@@ -4,7 +4,7 @@ import iphone from './iphone.png';
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const slides = [1, 2, 3, 4];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -33,7 +33,7 @@ function App() {
         <div className='main'>
           <h2>iPhone 12 pro</h2>
           <p>The iPhone 12 Pro and iPhone 12 Pro Max are part of Apple’s latest generation of smartphones, offering 5G connectivity, the A14 chip for better performance.</p>
-          <button>Order now</button>
+          <button id='main_button'>Order now</button>
           <button>Learn more</button>
           <div className='slider-container'>
             <button onClick={prevSlide} className='arrow-button'>&lt;</button>
